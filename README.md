@@ -1,0 +1,2 @@
+# rabbitmq_publish_consumer
+rabbitmq_publish_consumer
