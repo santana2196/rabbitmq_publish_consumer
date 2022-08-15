@@ -17,6 +17,8 @@ python3 publish_rabbitmq.py
 #Consumir
 python3 consumer-rabbitmq.py
 
-#consultar no sqlite 
+#consultar no sqlite
+
 sqlite3 operation/banco/db.sqlite3
+
 sqlite> select count(*) from population;
