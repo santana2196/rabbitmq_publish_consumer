@@ -1,28 +1,35 @@
-<h1 align="center">Projeto</h1>
+<h1>Projeto</h1>
 
-Enfilera o arquivo no rabbitmq e consome enviando os dados para sqlite 
+<p>Enfilera o arquivo no rabbitmq e consome enviando os dados para sqlite<p>
 
-#lib pika
+<p2>Maos Obra</p2>
+
+<h1> 
+<img src= https://media.giphy.com/media/l9Jhzwdi09Ve0/giphy.gif width="300px"/> 
+</h1>
+ 
+
+<h2>Lib pika</h2>
 
 pip install pika
 
-#subir docker compose
+<h2>subir docker compose</h2>
 
 docker-compose up -d
 
-#usuario do rabbitmq
-
+<h2>usuario do rabbitmq</h2>
 guest:guest
 
-#publicar na fila
+<h2>publicar na fila</h2>
 
 python3 publish_rabbitmq.py 
 
-#Consumir
+<h2>Consumir</h2>
 
 python3 consumer-rabbitmq.py
 
-#consultar no sqlite
+<h2>consultar no sqlite</h2>
 
 sqlite3 operation/banco/db.sqlite3
+
 sqlite> select count(*) from population;
